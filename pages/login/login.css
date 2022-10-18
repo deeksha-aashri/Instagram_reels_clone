@@ -1,0 +1,39 @@
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    text-align: center;
+    flex-direction: row;
+}
+.forgotpassword{
+    color: rgb(58, 94, 159);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.login-card{
+  
+    width:23rem;
+    height:20rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+.bottomcardlogin{
+ margin-top: 1rem;
+width: 23rem;
+border: 1px solid #ccc;
+padding: 1rem;
+
+}
+.bckgrd{
+    background-image: url("../../assets/background.png");
+    width:440px;
+    height:600px;
+}
+.carousel{
+    margin-top: 13.5vh;
+    margin-left: 3.3vw;
+  
+}
