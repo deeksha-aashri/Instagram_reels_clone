@@ -6,13 +6,13 @@ import { AuthContext } from "../context/auth";
 import { arrayUnion, doc, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { ref } from "firebase/storage";
-import { Button } from "@mui/material";
+import { Avatar, Button } from "@mui/material";
 function Profile() {
  const {user} =useContext(AuthContext);
     const [userData,setUserData]=useState({});
     const [postId,setpostId]=useState([]);
     const [postURL,setPostURL]=useState([]);
-    const [biodata, setBiodata]=useState("Crazy ride");
+    const [biodata, setBiodata]=useState("Let's roll");
     console.log("UserData check",userData.posts)
     
     useEffect(()=>{
@@ -39,6 +39,7 @@ function Profile() {
   },[postId])
  
   const handlebio=()=>{
+    console.log("handlebio function is running");
     
   }
   
@@ -48,10 +49,15 @@ function Profile() {
       <Navbar userData= {userData}/>
       <div>
         <div className="profile-intro">
-          <div
-            style={{ height: "8rem", width: "8rem", clipPath: "circle(50%)" }}
+        <div
+            style={{  clipPath: "circle(50%)" }}
           >
-            <Image  layout="fill"   src={userData?.downloadURL} />
+            <Avatar
+                  alt="Remy Sharp"
+                  src={userData?.downloadURL}
+                  sx={{ height: "8rem", width: "8rem",}}
+                />
+            
           </div>
           <div className="biodata">
           <div className="post-followers-following">
@@ -63,13 +69,13 @@ function Profile() {
          <div className="user-info">
          <h4>{userData?.fullName}</h4>
          {
-          biodata==null? 
-          <Button variant="outlined" size="small" onClick={handlebio}>Edit profile</Button>
+          biodata==''? 
+          <Button variant="outlined" size="medium" onClick={handlebio}>Add bio</Button>
           :
           (<div>
           <div>{biodata}</div>
           
-          <Button variant="outlined" size="small">Edit profile</Button>
+          <Button variant="outlined" size="medium">Edit bio</Button>
           </div>
           )
          }
