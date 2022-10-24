@@ -69,7 +69,8 @@ useEffect(() => {
              uid:userInfo.user.uid,
              posts:[],
              followers:[],
-             following:[]
+             following:[],
+             biodata:null
             }
             //creating a collection called users in databse called db. The name of document id the third arg then we have the data which will go in doc
             await setDoc(doc(db,"users",userInfo.user.uid),userData)

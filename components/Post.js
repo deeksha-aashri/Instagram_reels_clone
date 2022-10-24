@@ -42,7 +42,7 @@ function Post({ postData, userData }) {
   console.log("PostData is ", postData);
 
 useEffect(()=>{
-  if(userData.following.includes(postData.uid)){
+  if(userData?.following?.includes(postData.uid)){
     setFollow(true);
   }
   else{

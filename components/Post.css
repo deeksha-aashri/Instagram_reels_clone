@@ -1,12 +1,13 @@
 .post-container{
-    height: 90vh;
+    height: 92vh;
     width:30rem;
    margin-top: 5rem;
-   
-   
    border: grey 1px solid;
    border-radius: 10px;
     
+}
+.post-container>video{
+    scroll-snap-align: start;
 }
 
 

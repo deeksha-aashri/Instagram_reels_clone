@@ -12,6 +12,7 @@ function Profile() {
     const [userData,setUserData]=useState({});
     const [postId,setpostId]=useState([]);
     const [postURL,setPostURL]=useState([]);
+    const [biodata, setBiodata]=useState("Crazy ride");
     console.log("UserData check",userData.posts)
     
     useEffect(()=>{
@@ -37,6 +38,9 @@ function Profile() {
     })
   },[postId])
  
+  const handlebio=()=>{
+    
+  }
   
   return (
 
@@ -58,7 +62,18 @@ function Profile() {
          </div>
          <div className="user-info">
          <h4>{userData?.fullName}</h4>
+         {
+          biodata==null? 
+          <Button variant="outlined" size="small" onClick={handlebio}>Edit profile</Button>
+          :
+          (<div>
+          <div>{biodata}</div>
+          
           <Button variant="outlined" size="small">Edit profile</Button>
+          </div>
+          )
+         }
+          
          </div>
           </div>
           

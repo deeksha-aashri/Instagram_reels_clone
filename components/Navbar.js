@@ -71,20 +71,13 @@ const ResponsiveAppBar = ({userData}) => {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))} */}
           </Box>
 
           <Box sx={{ flexGrow: 0 }} className="nav-icons-container">
-           
-            <HomeIcon fontSize="large" className="nav-icons" />
+           <Link href="/" style={{cursor:"pointer"}}>
+           <HomeIcon fontSize="large" className="nav-icons" />
+           </Link>
+            
             <ExploreIcon fontSize="large" className="nav-icons" />
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

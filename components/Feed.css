@@ -32,11 +32,12 @@
     height: 80vh;
     
     border-radius: 15px;
-    /* scrollbar-width: 0;
-    overflow-y: scroll; */
-
+    
+  scroll-snap-type: y mandatory;
 }
-
+ .post-container>video{
+    scroll-snap-align: start;
+ }
 .videos-container::-webkit-scrollbar{
     display: none;
 }
