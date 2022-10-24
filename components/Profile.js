@@ -38,10 +38,7 @@ function Profile() {
     })
   },[postId])
  
-  const handlebio=()=>{
-    console.log("handlebio function is running");
-    
-  }
+  
   
   return (
 
@@ -70,7 +67,7 @@ function Profile() {
          <h4>{userData?.fullName}</h4>
          {
           biodata==''? 
-          <Button variant="outlined" size="medium" onClick={handlebio}>Add bio</Button>
+          <Button variant="outlined" size="medium" >Add bio</Button>
           :
           (<div>
           <div>{biodata}</div>
