@@ -7,7 +7,7 @@ import { arrayUnion, doc, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { ref } from "firebase/storage";
 import { Avatar, Button } from "@mui/material";
-function Profile() {
+function profile() {
  const {user} =useContext(AuthContext);
     const [userData,setUserData]=useState({});
     const [postId,setpostId]=useState([]);
@@ -96,4 +96,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default profile;

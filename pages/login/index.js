@@ -14,7 +14,7 @@ import { AuthContext } from '../../context/auth';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-function Index() {
+function index() {
   
   const [email,setEmail]=useState("");
   const [password,setPassword]=useState("");
@@ -93,4 +93,4 @@ function Index() {
   )
 }
 
-export default Index
+export default index
