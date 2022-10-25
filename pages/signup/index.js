@@ -12,7 +12,7 @@ import { storage, db } from "../../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { setDoc,doc } from 'firebase/firestore';
 
-function index() {
+function Index() {
   const [email, setEmail]=useState("");
   const [password,setPassword]=useState("");
   const [fullName,setFullName]=useState("");
@@ -176,4 +176,4 @@ useEffect(() => {
   )
 }
 
-export default index
+export default Index
