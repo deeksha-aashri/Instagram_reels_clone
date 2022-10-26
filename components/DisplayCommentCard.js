@@ -25,11 +25,11 @@ function DisplayCommentCard({postData, userData}) {
       <>
         {
         
-        allComments.map((commentObj) => {
+        allComments.map((commentObj,index) => {
           
           return (
             
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
+            <div key={index}style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
               <Avatar src={commentObj.userDP } sx={{marginRight:"0.50rem"}} />
               <p style={{marginTop:"0.75rem", marginBottom:"0.75rem", }}>
                

@@ -146,10 +146,7 @@ useEffect(() => {
               setFile(e.target.files[0]);
             }}
           />
-           {/* <IconButton color="secondary">
-            <CloudUploadIcon />
-            </IconButton> 
-          </input> */}
+           
         </Button> 
 
         <Button
