@@ -30,11 +30,11 @@ function DisplayCommentCard({postData, userData}) {
           return (
             
             <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
-              <Avatar src={commentObj.userDP } />&nbsp;&nbsp;&nbsp;
-              <p style={{marginTop:"0.75rem", marginBottom:"0.75rem"}}>
+              <Avatar src={commentObj.userDP } sx={{marginRight:"0.50rem"}} />
+              <p style={{marginTop:"0.75rem", marginBottom:"0.75rem", }}>
                
-                <span style={{fontWeight:"500"}}>{commentObj.userName}&nbsp; </span>
-               <span style={{fontWeight:"300"}}>{commentObj.text}&nbsp;</span> 
+                <span style={{fontWeight:"500", marginRight:"0.5rem"}}>{commentObj.userName  }</span>
+               <span style={{fontWeight:"300"}}>{commentObj.text}</span> 
               </p>
             </div>
           );

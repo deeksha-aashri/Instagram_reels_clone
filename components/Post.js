@@ -145,9 +145,9 @@ useEffect(()=>{
                     <Avatar
                       alt="Remy Sharp"
                       src={postData.profilePhotoURL}
-                   
-                    /> &nbsp;
-                    <p>{postData.profileName}</p>&nbsp;
+                     sx={{marginLeft:"0.20rem", marginRight:"0.20rem"}}
+                    /> 
+                    <p >{postData.profileName}</p>
                     {
                       follow ?
                       (
