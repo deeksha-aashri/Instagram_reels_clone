@@ -78,10 +78,10 @@ function index() {
     <Button variant="contained" size="small" fullWidth onClick={handleClick} disabled={loading}>Log in</Button> 
  
    </div>
-   <div className='bottomcardlogin'>
+   <div className='bottomcardlogin' >
     Don't have an account?
     <Link href='/signup'> 
-    <span style={{color:"blueviolet"}}>Sign up</span>
+    <span style={{color:"blueviolet", marginLeft:"0.2rem"}}>Sign up</span>
     </Link>
    </div>
    </div>

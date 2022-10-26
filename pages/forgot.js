@@ -93,7 +93,7 @@ function forgot() {
           </Button>
         </div>
         <div className="bottom-card">
-          Don't Have an account ?{" "}
+          Don't Have an account ?
           <Link href='/signup'>
             <span style={{ color: "blueviolet" }}>Signup</span>
           </Link>
