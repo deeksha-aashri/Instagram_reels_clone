@@ -73,8 +73,10 @@ function index() {
            { error!="" &&
             <div style={{ color: "red" }}>{error}</div>
            }
-            
-    <div className='forgotpassword'>Forgot password?</div>
+            <Link href='/forgot'>
+            <div className='forgotpassword'>Forgot password?</div>
+            </Link>
+    
     <Button variant="contained" size="small" fullWidth onClick={handleClick} disabled={loading}>Log in</Button> 
  
    </div>
