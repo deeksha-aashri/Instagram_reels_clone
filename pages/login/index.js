@@ -79,7 +79,7 @@ function index() {
  
    </div>
    <div className='bottomcardlogin' >
-    Don't have an account?
+    Do not have an account?
     <Link href='/signup'> 
     <span style={{color:"blueviolet", marginLeft:"0.2rem"}}>Sign up</span>
     </Link>
