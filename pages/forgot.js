@@ -95,7 +95,7 @@ function forgot() {
         <div className="bottom-card">
           Don't Have an account ?
           <Link href='/signup'>
-            <span style={{ color: "blueviolet" }}>Signup</span>
+            <span style={{ color: "blueviolet",marginLeft:"0.2rem" }}>Signup</span>
           </Link>
         </div>
       </div>
