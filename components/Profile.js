@@ -7,7 +7,7 @@ import { arrayUnion, doc, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { ref } from "firebase/storage";
 import { Avatar, Button } from "@mui/material";
-function profile() {
+function Profile() {
  const {user} =useContext(AuthContext);
     const [userData,setUserData]=useState({});
     const [postId,setpostId]=useState([]);
@@ -86,8 +86,8 @@ function profile() {
         <hr />
         <div className="profile-posts" >
          
-          {postURL.map(post=>(
-            <video  autoPlay controls muted src={post}></video>
+          {postURL.map((post,index)=>(
+            <video  key={index} autoPlay controls muted src={post}></video>
           ))}
        
         </div>
@@ -96,4 +96,4 @@ function profile() {
   );
 }
 
-export default profile;
+export default Profile;

@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import React, { useContext }  from 'react'
 import Profile from '../components/Profile'
 import { AuthContext } from '../context/auth'
-function profile() {
+function Profile1() {
   const {user} =useContext(AuthContext);
   console.log("To see the profile");
   const Redirect=()=>{
@@ -18,4 +18,4 @@ function profile() {
   )
 }
 
-export default profile
+export default Profile1

@@ -8,7 +8,7 @@ import { AuthContext } from "../context/auth";
 import { useRouter } from "next/router";
 import Link from 'next/link'
 
-function forgot() {
+function Forgot() {
   const [email, setEmail] = React.useState("");
   const [error, setError] = React.useState("");
   const [loading, setLoading] = React.useState(false);
@@ -78,4 +78,4 @@ function forgot() {
   );
 }
 
-export default forgot;
+export default Forgot ;
