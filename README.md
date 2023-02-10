@@ -1,4 +1,4 @@
-The app has been deployed at https://instagram-reels-clone-5zq00c6mz-deeksha-aashri.vercel.app/
+The app has been deployed at https://instagram-reels-clone-seven.vercel.app/
 Description of the app</br>
 A basic clone to instagram.</br>
 The functionalities available to the users are: </br>
